@@ -1,0 +1,1 @@
+# TradeSync FastAPI Backend

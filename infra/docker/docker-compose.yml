@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  postgres:
+    image: postgres:16
+    container_name: tradesync-db
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: tradesync
+    volumes:
+      - ../docker-data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
